@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trading Dashboard</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+</head>
+
+<body class="trading-dashboard">
+    <div class="container-fluid">
+        <div class="container-fluid dashboard">
+
+            <!-- NAVIGATION BAR START -->
+            <div class="top-nav">
+                <a class="menu" href=""><i class="fas fa-hamburger"></i>MENU</a>
+                <span class="user-id">IDENTIFICATION: ENGINEER STATION 7553-2V</span>
+                <span class="user-location">CONTROL BLOCK: 341-M3</span>
+                <span class="system-icons">
+                    <i class="fas fa-upload"></i>
+                    <i class="fas fa-wifi"></i>
+                    <span class="date-time">17.21 Sat</span>
+                </span>
+            </div>
+            <!-- NAVIGATION BAR END -->
+
+            <!-- ROW ONE START -->
+            <div class="row mt-2">
+                <div class="col-md-3">
+                    <div class="dashboard-title">
+                        <h2>TRADING VIEW</h2>
+                        <hr>
+                        <h4>complex 7-1-981v</h4>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dashboard-profile-settings pl-2">
+                        <span class="system-user-id">PROFILE 7553-2V</span>
+                        <div class="row">
+                            <div class="col-md-6 pl-3">
+                                <p class="system-state">
+                                    OBJECT: C-34/25
+                                    <br> STATUS: SYSTEM OK
+                                    <br> MODE: STEADY
+                                    <br> CHANGE SETTINGS
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mr-2">
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="trading-overview">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_c7b48"></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                    <script type="text/javascript">
+                                        new TradingView.widget({
+                                            "width": 395,
+                                            "height": 96,
+                                            "symbol": "OANDA:GBPUSD",
+                                            "interval": "D",
+                                            "timezone": "Europe/London",
+                                            "theme": "Dark",
+                                            "style": "2",
+                                            "locale": "uk",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "hide_top_toolbar": true,
+                                            "hide_legend": true,
+                                            "allow_symbol_change": true,
+                                            "save_image": false,
+                                            "container_id": "tradingview_c7b48"
+                                        });
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="system-settings">
+                        <ul style="color: rgb(255, 255, 255)">
+                            <li><a href="">PROFILE<i class="fas fa-clipboard system-settings-icon"></i></a></li>
+                            <li><a href="">LAN<i class="fas fa-network-wired system-settings-icon"></i></a></li>
+                            <li><a href="">SECURITY<i class="fas fa-globe system-settings-icon"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ROW ONE END -->
+
+            <!-- ROW TWO START -->
+            <div class="row mt-3">
+
+                <div class="col-md-6">
+                    <div class="trading-graph-main">
+                        <div class="row">
+                            <span class="graph-title pl-4">TRADING GRAPH</span>
+                            <span class="tile-btn-group pr-3">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-times-circle"></i>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="version pl-4">complex 7-1-981v</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="day-opt mt-3">
+                                    <span>SHOW TRADES</span>
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="monday">Mon</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="tuesday">Tue</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="wednesday">Wed</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="thursday">Thur</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="friday">Fri</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="saturday">Sat</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                                <div class="day-opt">
+                                    <label class="day-lbl" for="sunday">Sun</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+								<div class="day-opt">
+                                    <label class="day-lbl" for="all">All</label>
+                                    <input id="chk" type="checkbox" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_128df"></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                    <script type="text/javascript">
+                                        new TradingView.widget({
+                                            "width": 610,
+                                            "height": 480,
+                                            "symbol": "NASDAQ:AAPL",
+                                            "interval": "D",
+                                            "timezone": "Europe/London",
+                                            "theme": "Dark",
+                                            "style": "0",
+                                            "locale": "uk",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "hide_top_toolbar": true,
+                                            "hide_legend": true,
+                                            "allow_symbol_change": true,
+                                            "save_image": false,
+                                            "container_id": "tradingview_128df"
+                                        });
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="trading-graph-secondary">
+                        <div class="row">
+                            <span class="graph-title pl-4">TRADING GRAPH</span>
+                            <span class="tile-btn-group pr-3">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-times-circle"></i>
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="version pl-4">complex 7-1-981v</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-5">
+                                <p class="system-state">
+                                    PERIOD: JAN 01 - JAN 18
+                                    <br> STATUS: SYSTEM OK
+                                    <br> MODE: STEADY
+                                    <br> CHANGE SETTINGS
+                                </p>
+                            </div>
+                            <div class="col-md-1">
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="progress progress-bar-vertical mr-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 60%;"></div>
+                                </div>
+                                <div class="progress progress-bar-vertical mr-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;"></div>
+                                </div>
+                                <div class="progress progress-bar-vertical mr-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 50%;"></div>
+                                </div>
+                                <div class="progress progress-bar-vertical mr-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 60%;"></div>
+                                </div>
+                                <div class="progress progress-bar-vertical mr-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 90%;"></div>
+                                </div>
+                                <div class="progress progress-bar-vertical mr-2">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="trading-secondary-container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                                <div id="tradingview_4195b"></div>
+                                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                                <script type="text/javascript">
+                                                    new TradingView.widget({
+                                                        "width": 395,
+                                                        "height": 120,
+                                                        "symbol": "OANDA:GBPUSD",
+                                                        "interval": "D",
+                                                        "timezone": "Europe/London",
+                                                        "theme": "Dark",
+                                                        "style": "7",
+                                                        "locale": "uk",
+                                                        "toolbar_bg": "#f1f3f6",
+                                                        "enable_publishing": false,
+                                                        "hide_top_toolbar": true,
+                                                        "hide_legend": true,
+                                                        "allow_symbol_change": true,
+                                                        "save_image": false,
+                                                        "container_id": "tradingview_4195b"
+                                                    });
+                                                </script>
+                                            </div>
+                                            <!-- TradingView Widget END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <div class="trading-secondary-container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                                <div id="tradingview_b4143"></div>
+                                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                                <script type="text/javascript">
+                                                    new TradingView.widget({
+                                                        "width": 395,
+                                                        "height": 120,
+                                                        "symbol": "OANDA:GBPUSD",
+                                                        "interval": "30",
+                                                        "timezone": "Europe/London",
+                                                        "theme": "Dark",
+                                                        "style": "2",
+                                                        "locale": "uk",
+                                                        "toolbar_bg": "#f1f3f6",
+                                                        "enable_publishing": false,
+                                                        "hide_top_toolbar": true,
+                                                        "hide_legend": true,
+                                                        "allow_symbol_change": true,
+                                                        "save_image": false,
+                                                        "container_id": "tradingview_b4143"
+                                                    });
+                                                </script>
+                                            </div>
+                                            <!-- TradingView Widget END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <div class="trading-secondary-container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <!-- TradingView Widget BEGIN -->
+                                            <div class="tradingview-widget-container">
+                                                <div id="tradingview_d5fff"></div>
+                                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                                <script type="text/javascript">
+                                                    new TradingView.widget({
+                                                        "width": 395,
+                                                        "height": 120,
+                                                        "symbol": "OANDA:GBPUSD",
+                                                        "interval": "W",
+                                                        "timezone": "Europe/London",
+                                                        "theme": "Dark",
+                                                        "style": "2",
+                                                        "locale": "uk",
+                                                        "toolbar_bg": "#f1f3f6",
+                                                        "enable_publishing": false,
+                                                        "hide_top_toolbar": true,
+                                                        "hide_legend": true,
+                                                        "allow_symbol_change": true,
+                                                        "save_image": false,
+                                                        "container_id": "tradingview_d5fff"
+                                                    });
+                                                </script>
+                                            </div>
+                                            <!-- TradingView Widget END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-2">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                        </div>
+                                        <span class="active-bar">102.0291.20</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                        </div>
+                                        <span class="active-bar">102.0291.20</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+                                        </div>
+                                        <span class="active-bar">102.0291.20</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                        </div>
+                                        <span class="active-bar">102.0291.20</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                        </div>
+                                        <span class="active-bar">102.0291.20</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="progress" style="height: 8px;">
+                                            <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                                        </div>
+                                        <span class="active-bar">102.0291.20</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-2">
+                                <div class="progress" style="height: 4px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mt-2" style="height: 4px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mt-2" style="height: 4px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mt-2" style="height: 4px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="progress mt-2" style="height: 4px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="sector-access">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <span class="sector-title">SECTOR</span>
+                                <hr>
+                                <span class="sector-description">complex 7-1-981v</span>
+                            </div>
+                            <div class="col-md-5 clear">
+                                <span class="sector-section">A</span>
+                            </div>
+                        </div>
+						
+						<div class="row mt-1">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-7">
+										<div class="progress" style="height: 8px;">
+											<div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+										</div>
+										<span class="active-bar">102.0291.20</span>
+										<div class="progress" style="height: 8px;">
+											<div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+										</div>
+										<span class="active-bar">102.0291.20</span>
+										<div class="progress" style="height: 8px;">
+											<div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+										</div>
+										<span class="active-bar">102.0291.20</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 text-left">
+										KEY LOG
+									</div>
+									<div class="col-md-12">
+										<div class="key-log">
+										
+										</div>
+									</div>
+								</div>
+								<div class="row mt-2">
+									<div class="col-md-1"></div>
+									<div class="col-md-12">
+										<div class="access-allowed">
+											<span class="access-status">ACCESS ALLOWED</span>
+										</div>
+									</div>
+									<div class="col-md-1"></div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW TWO END -->
+
+            <!-- ROW THREE START -->
+            <div class="row mt-3">
+                <div class="col-md-3 pb-2">
+                    <span class="stat-title pl-2">ONLINE STATISTICS</span>
+                    <div class="stat-container">
+                        <span class="system-user-id pl-2">PROFILE 7553-2V</span>
+                        <div class="row">
+                            <div class="col-md-6 pl-3">
+                                <p class="system-state pl-2">
+                                    OBJECT: C-34/25
+                                    <br> STATUS: SYSTEM OK
+                                    <br> MODE: STEADY
+                                    <br> CHANGE SETTINGS
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mr-2">
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                    </div>
+                                    <div class="progress mt-2" style="height: 8px;">
+                                        <div class="progress-bar progress-bar-animated bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="trading-overview">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div id="tradingview_fdf89"></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                    <script type="text/javascript">
+                                        new TradingView.widget({
+                                            "width": 390,
+                                            "height": 120,
+                                            "symbol": "FX:USDOLLAR",
+                                            "interval": "D",
+                                            "timezone": "Europe/London",
+                                            "theme": "Dark",
+                                            "style": "1",
+                                            "locale": "uk",
+                                            "toolbar_bg": "#f1f3f6",
+                                            "enable_publishing": false,
+                                            "hide_top_toolbar": true,
+                                            "hide_legend": true,
+                                            "allow_symbol_change": true,
+                                            "save_image": false,
+                                            "container_id": "tradingview_fdf89"
+                                        });
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="trading-overview">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- TradingView Widget BEGIN -->
+                                        <div class="tradingview-widget-container">
+                                        <div id="tradingview_c5ce4"></div>
+                                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                        <script type="text/javascript">
+                                        new TradingView.widget(
+                                        {
+                                        "width": 280,
+                                        "height": 120,
+                                        "symbol": "NASDAQ:TSLA",
+                                        "interval": "W",
+                                        "timezone": "Europe/London",
+                                        "theme": "Dark",
+                                        "style": "7",
+                                        "locale": "uk",
+                                        "toolbar_bg": "#f1f3f6",
+                                        "enable_publishing": false,
+                                        "hide_top_toolbar": true,
+                                        "hide_legend": true,
+                                        "save_image": false,
+                                        "container_id": "tradingview_c5ce4"
+                                        }
+                                        );
+                                        </script>
+                                        </div>
+                                        <!-- TradingView Widget END -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <div class="system-protection">
+                        <div class="row">
+                            <div class="col-md-12">
+								<div class="system-title">
+									<span class="system-title-1 pt-2">SYSTEM</span>
+									<br>
+									<span class="system-title-2">PROTECTION</span>
+								</div>
+                            </div>
+                        </div>
+						<div class="row">
+                            <span class="version pl-4">complex 7-1-981v</span>
+                        </div>
+						
+						<div class="row">
+							<div class="col-md-12 mt-3">
+								<div class="row">
+									<div class="col-md-4">
+                                        <div class="login-lbl mt-2">
+                                            <label for="username">LOGIN</label>
+                                            <label for="password">PASSWORD</label>
+                                        </div>
+									</div>
+									
+									<div class="col-md-8">
+                                        <div class="login-input">
+                                            <input name="username" type="text" size="8">
+                                            <input name="password" type="text" size="8">
+                                        </div>
+									</div>
+								</div>	
+
+								<div class="row mt-3 no-gutters"">
+									<div class="col-md-5"">
+										<div class="access-user-img">
+										
+										</div>
+										<div class="access-img-status mt-2">
+											<span>NO PHOTO</span>
+										</div>
+									</div>
+									<div class="col-md-5 mx-1">
+										<!-- SYSTEM ACCESS ICONS START -->
+										<div class="row">
+											<div class="col-md-12 ">
+												<div class="row">
+													<div class="col-md-12">
+                                                        <span class="user-btn-group">
+                                                            <i class="fas fa-user user-btn"></i>
+                                                            <i class="fas fa-user user-btn"></i>
+                                                            <i class="fas fa-user user-btn"></i>
+                                                            <i class="fas fa-user user-btn"></i>
+                                                        </span>
+                                                    </div>
+												</div>
+												
+												<div class="row">
+													<div class="col-md-12">
+                                                        <span class="user-btn-group">
+                                                            <i class="fas fa-user user-btn"></i>
+                                                            <i class="fas fa-user user-btn"></i>
+                                                            <i class="fas fa-user user-btn"></i>
+                                                            <i class="fas fa-user user-btn"></i>
+                                                        </span>
+                                                    </div>
+												</div>
+											</div>
+										</div>
+										<!-- SYSTEM ACCESS ICONS END -->
+										
+										<div class="row">
+											<div class="col-md-12 ">
+												<div class="user-details">
+													<span class="user-fname">FIRST NAME: CHRIS</span>
+													<br>
+													<span class="user-lname">LAST NAME: REES</span>
+													<br>
+													<span class="user-history">HISTORY: ACTIVE</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="row">
+											<div class="col-md-12 ">
+												<div class="user-status">
+													<span>POTENTIALLY DANGEROUS</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- ROW THREE END -->
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/font-awesome.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+</html>

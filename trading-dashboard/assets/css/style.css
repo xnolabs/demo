@@ -1,0 +1,255 @@
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.top-nav a {
+    color: rgb(255, 255, 255);
+}
+
+ul li a {
+    color: rgb(255, 255, 255);
+}
+
+.trading-dashboard {
+    background-color: rgb(22, 26, 38);
+    color: rgb(255, 255, 255);
+}
+
+.dashboard {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.top-nav {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.user-id {
+    margin-left: 150px;
+}
+
+.user-location {
+    margin-left: 250px;
+}
+
+.system-icons {
+    float: right;
+}
+
+.dashboard-profile-settings {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.system-state {
+    font-size: 12px;
+}
+
+.system-user-id {
+    letter-spacing: 2px;
+}
+
+.trading-overview {
+    border-right: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.system-settings ul {
+    list-style: none;
+}
+
+.system-settings ul li {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.system-settings-icon {
+    padding: 5px;
+}
+
+.tile-btn-group {
+    margin-left: auto;
+}
+
+.trading-graph-main {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.graph-title {
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.trading-graph-secondary {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.sector-access {
+    border: 1px solid rgb(255, 255, 255);
+    padding-top: 10px;
+    padding: 5px;
+}
+
+.sector-description {
+    font-size: 11px;
+}
+
+.sector-section {
+    font-size: 75px;
+}
+
+.clear {
+    margin-top: -25px;
+}
+
+.stat-container {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.system-protection {
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: -200px;
+    padding-top: 10px;
+    padding: 5px;
+}
+
+.system-title {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.system-title-1,
+.system-title-2 {
+    font-size: 28px;
+    line-height: 0.5 !important;
+}
+
+.system-title-2 {
+    text-decoration: underline;
+}
+
+.version {
+    margin-right: auto;
+    font-size: 8px;
+}
+
+.day-opt {
+    display: table;
+    float: left;
+    margin-right: 15px;
+}
+
+.day-lbl {
+    display: table-row;
+}
+
+#chk {
+    display: table-row;
+    width: 100%;
+}
+
+.trading-secondary-container {
+    border-right: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.active-bar {
+    font-size: 8px;
+}
+
+.key-log {
+    border-right: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 150px;
+}
+
+.access-allowed {
+    border-top: 1px solid rgb(0, 255, 0);
+    border-bottom: 1px solid rgb(0, 255, 0);
+    border-left: 3px solid rgb(0, 255, 0);
+    border-right: 3px solid rgb(0, 255, 0);
+    text-align: center;
+}
+
+.access-user-img {
+    border: 1px solid rgb(255, 255, 255);
+    height: 120px;
+}
+
+.access-img-status {
+    border: 2px solid rgb(255, 0, 0);
+    font-size: 12px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.user-details {
+    font-size: 8px;
+}
+
+.user-status {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+.access-status {
+    font-size: 16px;
+    color: rgb(0, 255, 0);
+}
+
+.login-lbl {
+    font-size: 12px;
+}
+
+.user-btn {
+    font-size: 12px;
+}
+
+.login-input input {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: 2px dotted whitesmoke !important;
+}
+
+.progress-bar-vertical {
+    width: 8px;
+    min-height: 70px;
+    float: left;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    /* Safari 7.0+ */
+}
+
+.progress-bar-vertical .progress-bar {
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+}
