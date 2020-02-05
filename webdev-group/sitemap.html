@@ -1,0 +1,243 @@
+
+
+<!doctype html>
+<html>
+<head>
+	<title>Sitemap</title>
+	<meta charset="UTF-8"> 
+	<!-- external styles -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	
+#svg g:hover polyline,
+#svg g:hover line {
+	fill: black;
+	stroke-width: 2;
+	stroke: black;
+}
+
+#svg g:hover g text,
+#svg g:hover text {
+	font-weight: bold;
+}
+
+#svg g:hover polygon,
+#svg g:hover rect,
+#svg g:focus polygon,
+#svg g:focus rect {
+	fill: hsla(24, 20%, 50%,.3);
+	stroke: black;
+	stroke-width: 2;
+} /* when you hover over, it will change colour*/
+</style>
+</head>
+<body>
+	<!-- Page Navigation -->
+			<div class="item1" id="high">
+				<nav class="nav-bar">
+					<img src="img/logo-small.png" alt="image" height="100px" width="200px">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>	
+						<li><a href="gallery.html">GALLERY</a></li>						
+						<li><a href="quiz.html">QUIZ</a></li>	
+						<li><a href="store.html">STORE</a></li>		
+						<li><a href="contact.html">CONTACT</a></li>	
+					</ul>
+				</nav>	
+			</div>
+<div>
+	<svg id="svg" height="600" width="1700">
+
+	<g id = "presentation"> <!-- for the box and text-->
+		<rect x="50" y="30" height="50" width="150" stroke="red" fill= "#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="125" y="60" font-family="Arial" text-anchor="middle"> Presentation Page </text>
+	</g>
+
+		<!-- line from presentation page to home page-->
+	  <line stroke="red" stroke-width="3" x1="125" y1="80" x2="125" y2="130"></line>
+
+	 <g id = "homepage"> 
+		<rect x="50" y="130" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="125" y="160" font-family="Arial" text-anchor="middle"> Home Page </text>
+	 </g>
+
+			<!-- line from home page to sitemap -->
+		 <line stroke="red" stroke-width="3" x1="125" y1="180" x2="125" y2="230"></line>
+
+	<g id = "sitemap">
+		<rect x="50" y="230" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="125" y="260" font-family="Arial" text-anchor="middle"> Sitemap </text>
+	</g>
+
+		<!-- line from home page to about -->
+		 <line x1="200" y1="155" x2="230" y2="155" stroke="red" stroke-width="3" />
+
+	<g id = "about">
+		<rect x="230" y="130" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="302" y="160" font-family="Arial" text-anchor="middle"> About </text>
+	</g>
+		<!-- line from about to gallery -->    
+	  <line x1="415" y1="155" x2="380" y2="155" stroke="red" stroke-width="3" />
+
+
+	 <g id = "gallery">
+		<rect x="415" y="130" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="490" y="160"font-family="Arial" text-anchor="middle"> Gallery </text>
+	</g>
+
+	  <!-- line from gallery to quiz -->
+	  <line x1="565" y1="155" x2="600" y2="155" stroke="red" stroke-width="3" />
+
+
+	 <g id = "quiz">
+		<rect x="600" y="130" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="670" y="160" font-family="Arial" text-anchor="middle"> Quiz </text>
+	</g>
+
+	  <!-- line from quiz to store -->
+	  <line x1="752" y1="155" x2="785" y2="155" stroke="red" stroke-width="3" />
+
+
+	<g id = "store">
+		<rect x="785" y="130" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="855" y="160" font-family="Arial" text-anchor="middle"> Store </text>
+	</g>
+
+		<!-- line from store to contact -->
+	<line x1="935" y1="155" x2="975" y2="155" stroke="red" stroke-width="3" />
+
+	<g id = "contact">
+		<rect x="975" y="130" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="1050" y="160" font-family="Arial" text-anchor="middle"> Contact </text>
+	</g>
+
+		<!-- line from about to sadiyah -->
+	  <line stroke="red" stroke-width="3" x1="300" y1="180" x2="300" y2="290"></line>
+
+	<g id = "sadiyah">
+		<rect x="230" y="290" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="300" y="320" font-family="Arial" text-anchor="middle"> Sadiyah </text>
+	</g>
+
+		<!-- line from sadiyah to her cv -->
+	  <line stroke="red" stroke-width="3" x1="300" y1="340" x2="300" y2="400"></line>
+
+	<g id = "sadiyahCV">
+		<rect x="230" y="400" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="300" y="430" font-family="Arial" text-anchor="middle"> Sadiyah's CV </text>
+	</g>
+
+	  <!-- line from sadiyah to rippandeep-->
+	  <line x1="380" y1="315" x2="430" y2="315" stroke="red" stroke-width="3" />
+
+	<g id = "rippandeep">
+		<rect x="430" y="290" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="500" y="320" font-family="Arial" text-anchor="middle"> Rippandeep </text>
+	</g>
+
+		<!-- line from rippandeep to his cv-->
+	  <line stroke="red" stroke-width="3" x1="500" y1="400" x2="500" y2="340"></line>
+
+	<g id = "rippandeepCV">
+		<rect x="430" y="400" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="500" y="430" font-family="Arial" text-anchor="middle"> Rippandeep's CV </text>
+	</g>
+
+	 <!-- line from rippandeep to callum-->
+	  <line x1="580" y1="315" x2="640" y2="315" stroke="red" stroke-width="3" />
+
+	<g id = "callum">
+		<rect x="640" y="288" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="710" y="320" font-family="Arial" text-anchor="middle"> Callum </text>
+	</g>
+
+		<!-- line from callum to his cv -->
+	  <line stroke="red" stroke-width="3" x1="715" y1="400" x2="715" y2="340"></line>
+
+	<g id = "callumCV">
+		<rect x="640" y="400" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="710" y="430" font-family="Arial" text-anchor="middle"> Callum's CV </text>
+	</g>
+
+	 <!-- line from callum to christopher-->
+	  <line stroke="red" stroke-width="3" x1="790" y1="315" x2="840" y2="315"></line>
+
+	<g id = "christopher">
+		<rect x="840" y="288" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="915" y="320" font-family="Arial" text-anchor="middle"> Christopher </text>
+	</g>
+
+	<!-- line from christopher to his cv-->
+	  <line x1="915" y1="340" x2="915" y2="400" stroke="red" stroke-width="3" />
+
+	<g id = "christopherCV">
+		<rect x="840" y="400" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="915" y="430" font-family="Arial" text-anchor="middle"> Christopher's CV </text>
+	</g>
+		
+	<!--- line from christopher to more info --->
+	<line stroke="red" stroke-width="3" x1="990" y1="315" x2="1045" y2="315"></line>
+
+	<g id = "moreInfo">
+		<rect x="1045" y="288" height="50" width="150" stroke="red" fill="#254441" stroke-width="3" />
+		<text fill="white" font-size="14" x="1115" y="320" font-family="Arial" text-anchor="middle"> More Info </text>
+	</g>
+
+</svg> 
+	</div>
+	
+<script>
+ /* this function will take you to each page when you click on each box of the sitemap*/
+document.getElementById("homepage").
+	addEventListener("click", function() { document.location.href="index.html";});
+	
+document.getElementById("about").
+	addEventListener("click", function() {document.location.href="about.html";});
+	
+document.getElementById("gallery").
+	addEventListener("click", function() {document.location.href="gallery.html";});
+	
+document.getElementById("quiz").
+	addEventListener("click", function() {document.location.href="quiz.html";});
+	
+document.getElementById("store").
+	addEventListener("click", function() {document.location.href="store.html";});
+	
+document.getElementById("contact").
+	addEventListener("click", function() {document.location.href="contact.html";});
+	
+document.getElementById("sitemap").
+	addEventListener("click", function() {document.location.href="sitemap.html";});
+	
+document.getElementById("sadiyah").
+	addEventListener("click", function() {document.location.href="about/sadiyah_cv.html";});
+	
+document.getElementById("sadiyahCV").
+	addEventListener("click", function() {document.location.href="about/sadiyah_cv.html";});
+	
+document.getElementById("rippandeep").
+	addEventListener("click", function() {document.location.href="about/rippandeep_cv.html";});
+	
+document.getElementById("rippandeepCV").
+	addEventListener("click", function() {document.location.href="about/rippandeep_cv.html";});
+	
+document.getElementById("callum").
+	addEventListener("click", function() {document.location.href="about/callum_cv.html";});
+	
+document.getElementById("callumCV").
+	addEventListener("click", function() {document.location.href="about/callum_cv.html";});
+	
+document.getElementById("christopher").
+	addEventListener("click", function() {document.location.href="about/christopher_cv.html";});
+	
+document.getElementById("christopherCV").
+	addEventListener("click", function() {document.location.href="about/christopher_cv.html";});
+	
+document.getElementById("moreInfo").
+	addEventListener("click", function() {document.location.href="moreInfo.html";});
+</script>
+		
+</body>	
+</html>

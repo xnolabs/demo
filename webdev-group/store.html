@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <title>Basketball Form</title>
+   <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body id="store-body">
+         <div class="grid-container">
+         <div class="item1">
+             
+             <!-- SIDE NAVIGATION - HOME (PAGE ANCHORS & BACK TO TOP-->
+			<button class="fa fa-bars" onclick="openMenu()" id="openCVMenu" alt="open/close CV Menu" style="width: 50px; height: 50px; background-color: rgb(255, 66, 67); border: none; outline: none;"></button>
+			<nav class="chris-cv-navigation" id="chris-cvMenu">
+				<ul class="chris-nav-list">
+					<a id="closeCVMenu" class="fa fa-times" onclick="closeMenu()" style="float: right;"></a>
+					<li><a href="#store-body">Back to top <i class="fa fa-chevron-up"></i></a></li>
+					<li><a href="#details">Personal Details</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#references">References</a></li>
+				</ul>
+			</nav>
+             
+         <nav class="nav-bar">
+         <img src="img/logo-small.png" height="100px" width="200px">
+               <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="about.html">ABOUT</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="quiz.html">QUIZ</a></li>
+                  <li><a href="store.html">STORE</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <br>
+
+                  <div style="margin-top: 15px;" id="store-mynav">
+                     <ul>
+                        <li><img src="images/alarm.svg" height="50" width="50">New Products</a></li>
+                        <li><img src="images/deliveryvan.png" height="50" width="50"> Track My Order</a></li>
+                         <li><img src="images/basket.png" height="50" width="50">Add to Basket</a></li>
+                     </ul>
+                     <button type="button" id="increase"> increase </button> 
+                     <button type="button" id="decrease"> decrease </button> 
+                  </div>
+            </ul>
+         </nav>
+      </div>
+
+      <div style="display:block; width: 100%">
+         <form id="store-form" name="Basketballform" onsubmit="return validateForm();"  method="post">
+               <fieldset>
+
+                   <div id="changeHappensHere"> <!-- ID for javascript, Font Size Change -->
+
+                  <legend class="formtitle">BasketMania Merchandise:</legend>
+
+                  <p class="intro1">Welcome to our merchandise page!</p>
+                  <p class="intro2">Choose to purchase any of our bestselling products below:</p>
+                  
+                  <hr>
+
+                  <p id="details" class="personaldetails">Personal Details: </p>
+                  <p class="intro3">In order to complete your order please fill in the details below:</p>
+                  <p class="firstname"><label for="first name">First Name: </label>
+                     <input type="text" name="name" id="name" size="20" placeholder="First Name">
+                  </p>
+                  <p class="surname"><label for="surname">Surname: </label>
+                     <input type="text" name="surname" id="surname" size="20" placeholder="Surname">
+                  </p>
+                  <p class="dob"><label for="dob">Date of Birth : </label>
+                     <input type="text" name="dob" id="dob" size="20" placeholder="Date of birth">
+                  </p>
+
+                  <p class="email"><label for="email">Email: </label>
+                     <input type="email" name="email" id="email" size="20" placeholder="Email">
+                  </p>
+
+                  <hr>
+
+                  <div>
+
+                  <p id="products" class="products">Choose your products below: </p>
+                  <p class="description">Select your items below by filling out all of the fields, then click the submit button to proceed below. </p>
+                  </div>
+              <div style="height:900px">
+               <div class="jersey">
+                     <img src="images/atlantahawksjersey.jpg"  alt="A white Atlanta Hawks Jersey with red logo" title="Atlanta Hawks Jersey" width="260" height="250" align="left"/>
+                     <p><input type="checkbox" name="atlantahawksjersey" id="atlantahawksjersey" value="Atlanta Hawks Basketball Jersey" >
+                        <label id="changeHappensHere" for="atlantahawksjersey">Atlanta Hawks Jersey - £40.99</label>
+                     </p>
+                     <div class="hoverdropdown">
+                        <span>Hover over to check stock!</span>
+                        <div class="dropdownstock">
+                        <p>IN STOCK</p>
+                        </div>
+                     </div>
+                     <p><label id="changeHappensHere" for="hawksquantity">Atlanta Hawks Jersey Quantity: </label>
+                        <input type="text" name="atlantahawksjerseyquantity" id="atlantahawksjerseyquantity" size="25" placeholder="Atlanta Hawks Jersey quantity" onchange="quantityChanged()">
+                     </p>
+                     <p>
+                        <label id="changeHappensHere" for="atlantahawksjerseysizes">Atlanta Hawks Jersey Size: </label>
+                        <select name="atlantahawksjerseysizes" id="atlantahawksjerseysizes">
+                           <option value="extra small">XS</option>
+                           <option value="small">S</option>
+                           <option value="medium">M</option>
+                           <option value="large">L</option>
+                           <option value="extra large">XL</option>
+                        </select>
+                     </p>
+                  </div>
+               <div class="jersey">
+                     <img src="images/celticsjersey.jpg" alt="A white Celtics Jersey with green logo" title="Celtics Jersey" width="260" height="250" align="left"/> 
+                     <p><input type="checkbox" name="celticsjersey" id="celticsjersey" value="Celtics Basketball Jersey" >
+                        <label id="changeHappensHere" for="celticsjersey">Celtics Jersey - £35.99</label>
+                     </p>
+                     <div class="hoverdropdown">
+                        <span>Hover over to check stock!</span>
+                        <div class="dropdownstock">
+                        <p>IN STOCK</p>
+                        </div>
+                     </div>
+                     <p><label id="changeHappensHere" for="celticsquantity">Celtics Jersey Quantity: </label>
+                        <input type="text" name="celticsjerseyquantity" id="celticsjerseyquantity" size="25" placeholder="Celtics Jersey quantity" onchange="quantityChanged()" >
+                     </p>
+                     <p>
+                        <label id="changeHappensHere" for="celticsjerseysizes">Celtics Jersey Size: </label>
+                        <select name="celticsjerseysizes" id="celticsjerseysizes">
+                           <option value="extra small">XS</option>
+                           <option value="small">S</option>
+                           <option value="medium">M</option>
+                           <option value="large">L</option>
+                           <option value="extra large">XL</option>
+                        </select>
+                     </p>
+                  </div>
+               <div class="jersey">
+               
+                     <img src="images/brooklynjersey.jpg" width="260" height="250" alt="A white Brookly Jersey with black logo" title="Brooklyn Jersey" align="left" /> 
+                     <p><input type="checkbox" name="brooklynjersey" id="brooklynjersey" value="Brooklyn Basketball Jersey" >
+                        <label id="changeHappensHere" for="brooklynjersey">Brooklyn Jersey - £30.99</label>
+                     </p>
+                     <div class="hoverdropdown">
+                        <span>Hover over to check stock!</span>
+                        <div class="dropdownstock">
+                        <p>IN STOCK</p>
+                        </div>
+                     </div>
+                     <p><label id="changeHappensHere" for="brooklynquantity">Brooklyn Jersey Quantity: </label>
+                        <input type="text" name="brooklynjerseyquantity" id="brooklynjerseyquantity" size="25" placeholder="Brooklyn Jersey quantity" onchange="quantityChanged()">
+                     </p>
+                     <p>
+                        <label id="changeHappensHere" for="brooklynjerseysizes">Brooklyn Jersey Size: </label>
+                        <select name="brooklynjerseysizes" id="brooklynjerseysizes">
+                           <option value="extra small">XS</option>
+                           <option value="small">S</option>
+                           <option value="medium">M</option>
+                           <option value="large">L</option>
+                           <option value="extra large">XL</option>
+                        </select>
+                     </p>
+                  </div>
+                  </div>
+              <div class="total">
+                     <h3 id="totalPrice"> Total : </h3>                     
+                  </div>           
+                  <div style="margin-top: 30px; position: relative; top: 0px">
+                     <hr>
+                     <input type="submit" value="Place Order">
+                     <input type="Reset">
+                  </div>
+                  
+               </div>
+               
+                  </fieldset>
+            </form> 
+         </div>
+       <div style="grid-area: footer;">
+         <p id="store-contact" class="contact">Contact Basket Mania below:</p>
+            <ul class="myfooter">               
+               <li><a class="Twitter" href="#twitter"><img src="images/twitter.svg" height="30" width="30"></li></a>
+               <li><a class="Instagram" href="i"><img src="images/instagram.svg" height="30" width="30"></li></a>
+               <li><a class="Gmail"><img src="images/gmail.svg" height="30" width="30"></li></a>
+            </ul>
+        </div>
+      
+
+            <hr>
+         </div>
+
+         <hr>
+
+         <a href="SadiyahSaeedCV.html">Page Editor-Sadiyah CV</a>
+
+         <p id="references" style="color: white;">References:</p>
+         <p style="color: white;">CSS Dropdowns-Basic Dropdown. (2019). Retrieved March 2019, from w3schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_text</p>
+         <p style="color: white;">JavaScript Forms-JavaScript Form Validation. (2019). Retrieved March 2019, from w3schools: https://www.w3schools.com/js/js_validation.asp</p>
+         <p style="color: white;">Icons: Twitter Icon. Retrieved March 2019, from iconfinder: https://www.iconfinder.com/icons/252077/tweet_twitter_icon From: Micon Social Pack License:Creative Commons (Attribution 3.0 Unported)</p>
+         <p style="color: white;">Instagram Icon. Retrieved March 2019, from iconfinder: https://www.iconfinder.com/icons/1298747/instagram_icon From: Social icons License: Free</p>
+         <p style="color: white;">Gmail Icon. Retrieved March 2019, from iconfinder: https://www.iconfinder.com/icons/1220367/gmail_google_logo_icon From: Social Icons - Color License: Creative Commons (Attribution 3.0 Unported)</p>
+         <p style="color: white;">Basket icon. Retrieved March 2019, from iconfinder: https://www.iconfinder.com/icons/511567/basket_buy_ecommerce_purchase_shopping_cart_icon From: Line icons set License: Free for commercial use </p>
+         <p style="color: white;">Delivery icon. Retrieved March 2019, from iconfinder: https://www.iconfinder.com/icons/10110/delivery_order_package_shipping_icon From: Glossy eCommerce Icons Pack License: LGPL</p> 
+         <p style="color: white;">Alarm icon. Retrieved March 2019, from iconfinder: https://www.iconfinder.com/icons/1805078/alarm_alert_event_notification_ring_shcedule_icon From: Computer License: Free for personal use only</p>
+         <p style="color: white;">Atlanta Hawks Nike Association Swingman Jersey - Custom - Mens. (n.d.). Retrieved March 2019, from NBA Store: https://www.nbastore.eu/stores/nba/en/product/atlanta-hawks-nike-association-swingman-jersey---custom---mens/226343?categories=jerseys</p>
+         <p style="color: white;">Boston Celtics Nike Association Swingman Jersey - Al Horford - Mens. (n.d.). Retrieved March 2019, from NBA Store: https://www.nbastore.eu/stores/nba/en/product/boston-celtics-nike-association-swingman-jersey---al-horford---mens/214906?categories=jerseys</p>
+         <p style="color: white;">Brooklyn Nets Nike Association Swingman Jersey - DAngelo Russell - Mens. (n.d.). Retrieved March 2019, from NBA Store: https://www.nbastore.eu/stores/nba/en/product/brooklyn-nets-nike-association-swingman-jersey---dangelo-russell---mens/235252?categories=jerseys</p>
+         <p style="color: white;">Presentation page: JavaScript and the DOM-setTimeout() method. (n.d.). Retrieved March 2019, from University of Westminster Web Development Schedule: https://intranet.ecs.westminster.ac.uk/modules/4COSC011W/js4.html and Redirect website after certain amount of time. (n.d.). Retrieved March 2019, from stackoverflow: https://stackoverflow.com/questions/3292038/redirect-website-after-certain-amount-of-time</p>
+         <p style="color: white;">Font-size: University of Westminster lecture 12/3/19.</p>
+
+
+</body>
+
+   <script type="text/javascript">
+
+      var currentFontSize = 14; 
+
+   function getSelectedValue ( selectList ) {
+   return selectList [ selectList.selectedIndex ].value;
+    }
+    
+   document.getElementById("increase").addEventListener("click", function() {
+
+   var newFontSize = currentFontSize + 2;
+
+   document.getElementById("changeHappensHere").style.fontSize = newFontSize + "px"; 
+   currentFontSize = newFontSize;
+});
+     
+         
+       document.getElementById("decrease").addEventListener("click", function() {
+
+   var newFontSize = currentFontSize - 2;
+
+   document.getElementById("changeHappensHere").style.fontSize = newFontSize + "px"; 
+   currentFontSize = newFontSize;
+});
+       
+
+
+      function printPurchase() {
+          alert("Alert Test");
+      }
+      
+      function quantityChanged(){
+
+         var atlantahawksjerseyquantity = document.getElementById("atlantahawksjerseyquantity").value;
+         var celticsjerseyquantity = document.getElementById("celticsjerseyquantity").value;
+         var brooklynjerseyquantity = document.getElementById("brooklynjerseyquantity").value;
+       var total = Number(atlantahawksjerseyquantity) * 40.99 +
+         Number(celticsjerseyquantity) * 35.99 + Number(brooklynjerseyquantity) * 30.99;
+         document.getElementById("totalPrice").innerText = "Total : "+ total;
+      }
+
+      function validateForm() {
+          
+          
+         var name = document.forms["Basketballform"]["name"].value;
+         if (name == "") {
+              
+              alert("Please ensure the first name field has been completed to proceed with your order");
+              return false;
+         }
+      
+         var surname = document.forms["Basketballform"]["surname"].value;
+         if (surname == "" ) {
+            alert("Please ensure the surname field has been completed to proceed with your order");
+          
+          return false;
+         }
+      
+         var dob = document.forms["Basketballform"]["dob"].value;
+         if (dob == "" ) {
+            alert("Please ensure the date of birth field has been completed to proceed with your order");
+            
+            return false;
+         }
+         var email = document.forms["Basketballform"]["email"].value;
+         if (email == "" ) {
+            alert("Please ensure the email field has been completed to proceed with your order");
+            
+            return false;
+         }         
+
+         if (document.getElementById('atlantahawksjersey').checked == false && 
+            document.getElementById('celticsjersey').checked == false &&
+            document.getElementById('brooklynjersey').checked == false){
+               alert("Please select a product to continue");
+               return false;
+            }
+         
+         var atlantahawksjersey = document.getElementById("atlantahawksjerseysizes").value;
+      var atlantahawksjerseyquantity = document.getElementById("atlantahawksjerseyquantity").value;
+      
+      if (document.getElementById('atlantahawksjersey').checked == true){     
+      
+      if (atlantahawksjerseyquantity == "") {
+      alert("Please ensure the Atlanta Hawks Jersey quantity field has been completed to proceed with your order");
+         return false;
+      }
+      }
+
+      var celticsjersey = document.getElementById("celticsjerseysizes").value;
+      var celticsjerseyquantity = document.getElementById("celticsjerseyquantity").value;
+      if (document.getElementById('celticsjersey').checked == true){
+         if (celticsjerseyquantity == "") {
+      alert("Please ensure the Celtics Jersey quantity field has been completed to proceed with your order");
+         return false;
+      }
+      }
+
+      var brooklynjersey = document.getElementById("brooklynjerseysizes").value;
+      var brooklynjerseyquantity = document.getElementById("brooklynjerseyquantity").value;
+      
+      
+      if (document.getElementById('brooklynjersey').checked == true){
+      
+      if (brooklynjerseyquantity == "") {
+      alert("Please ensure the Brooklyn Jersey quantity field has been completed to proceed with your order");
+         return false;
+      }
+      }
+      //ONE POP UP TO USER:
+
+      var message = "Dear "+ document.forms["Basketballform"].name.value+ ", you have ordered : \n";
+      if (document.getElementById('atlantahawksjersey').checked == true){
+       message = message + atlantahawksjerseyquantity +
+         " Atlanta Hawks Jersey size " +atlantahawksjersey + " at a cost of £40.99 each \n";
+     }
+     if (document.getElementById('celticsjersey').checked == true){
+      message = message + celticsjerseyquantity +
+         " Celtics Jersey size " +celticsjersey + " at a cost of £35.99 each \n";
+     }
+     if (document.getElementById('brooklynjersey').checked == true){
+     message = message + brooklynjerseyquantity +
+         " Brooklyn Jersey size "+ brooklynjersey + " at a cost of £30.99 each \n ";
+     }
+     //BILL
+     message = message + document.getElementById("totalPrice").innerText;
+      alert(message); 
+      
+         return false;
+      
+      
+         }
+      
+   </script>
+
+<!-- Side Navigation Menu -->
+	<script>
+	function openMenu(e){
+		document.getElementById('chris-cvMenu').style.display = "block";
+		document.getElementById('openCVMenu').style.display = "none";
+
+	}
+
+	function closeMenu(e){
+		document.getElementById('chris-cvMenu').style.display = "none";
+		document.getElementById('openCVMenu').style.display = "block";
+	}
+	</script>
+</html>

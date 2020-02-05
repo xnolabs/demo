@@ -1,0 +1,237 @@
+
+<!-- Type of Web Document -->
+<!DOCTYPE html>
+<html>
+
+	<!-- Page Information, Unicode Settings, and External Styles/Scripts -->
+	<head>
+		<title>BasketMania | Gallery</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">			
+		
+		<!-- External Styles -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+
+	<!-- Visible Content to User -->
+	<body id="back-to-top">
+
+        
+        <!-- SIDE NAVIGATION - HOME (PAGE ANCHORS & BACK TO TOP-->
+			<button class="fa fa-bars" onclick="openMenu()" id="openCVMenu" alt="open/close CV Menu" style="width: 50px; height: 50px; background-color: rgb(255, 66, 67); border: none; outline: none;"></button>
+			<nav class="chris-cv-navigation" id="chris-cvMenu">
+				<ul class="chris-nav-list">
+					<a id="closeCVMenu" class="fa fa-times" onclick="closeMenu()" style="float: right;"></a>
+					<li><a href="#back-to-top">Back to top <i class="fa fa-chevron-up"></i></a></li>
+					<li><a href="#footer">Footer</a></li>
+				</ul>
+			</nav>
+        
+		<!-- CSS Grid System: Page Container -->
+		<div class="grid-container">
+
+			<!-- Page Navigation -->
+			<div class="item1" id="high">
+				<nav class="nav-bar">
+					<img src="img/logo-small.png" height="100px" width="200px">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>	
+						<li><a href="gallery.html">GALLERY</a></li>						
+						<li><a href="quiz.html">QUIZ</a></li>	
+						<li><a href="store.html">STORE</a></li>		
+						<li><a href="contact.html">CONTACT</a></li>	
+					</ul>
+				</nav>	
+			</div>
+
+			<!-- Main Section Start -->
+			<div class="item2" id="main-content">
+				<div id = "top">
+			        <div id = "mainImage">
+			            <img style="width: 100%; height: 100%; background-size: cover;" id="enlargedImage" alt = "Stephens Image" src = "img\student-4_images\Steph-Curry.jpg" >  
+			        </div>
+	        
+			        <div id = "thumbnails">
+			            <img id = "thumbnailsSize" src = "img\student-4_images\Steph-Curry.jpg" alt = "Stephens Image" onclick="passImage('img/student-4_images/Steph-Curry.jpg'); stephensText();">
+			        </div>
+	        
+			        <div id = "thumbnails">
+			            <img id = "thumbnailsSize" alt = "LeBron Image" src = "img\student-4_images\lebron.jpg" onclick="passImage('img/student-4_images/lebron.jpg'); LeBronText();" >
+			        </div>
+        
+			        <div id = "thumbnails">
+			            <img id = "thumbnailsSize" alt = "Kobe Image" src = "img\student-4_images\Kobe.jpg" onclick="passImage('img/student-4_images/Kobe.jpg'); KobeText();">
+			        </div>
+        
+			        <div id = "thumbnails">
+			            <img id = "thumbnailsSize" alt = "James Image" src = "img\student-4_images\JamesHarden.jpg" onclick="passImage('img/student-4_images/JamesHarden.jpg'); JamesText();">
+			        </div>
+        
+			        <div id = "thumbnails">
+			            <img id = "thumbnailsSize" alt = "DeMar Image" src = "img\student-4_images\DeMar DeRozan.jpg" onclick="passImage('img/student-4_images/DeMar DeRozan.jpg'); DeMarText();">
+			        </div>
+    			</div>
+    
+			    <div id = textBox>       
+			        <h2 id="header">Stephen Curry</h2>
+			        <p id="description"> 
+						Wardell Stephen Curry II is an American professional basketball player for the Golden State Warriors in the NBA. He is a six-time NBA All-Star, he has been named the NBA Most Valuable Player (MVP) twice and won three NBA championships with the Warriors. Many players and analysts have called him the greatest shooter in NBA history. He is credited with revolutionizing the game of basketball by inspiring teams to regularly utilize the three-point shot as part of their winning strategy. 
+					 </p>
+			    </div>
+			</div>
+			
+			<!-- Main Section End -->
+
+			<!-- Footer Section -->
+			<div class="item16">
+			    <div class="container" id="bar">
+					
+                    <div class="about-form">
+					Who is your favourite player? Vote for them below:
+						<form>
+						  <input type="radio" name="picture" value="picture 1" checked> Stephen Curry <br>
+						  <input type="radio" name="picture" value="picture 2"> LeBron James <br>
+						  <input type="radio" name="picture" value="picture 3"> Kobe Bryant <br>
+						  <input type="radio" name="picture" value="picture 4"> James Harden <br>
+						  <input type="radio" name="picture" value="picture 5"> DeMar DeRozan <br>
+						</form>
+					
+					<button onclick="myFunction()">Submit</button>
+
+                        </div>
+                    
+					<script type="text/javascript">
+						function myFunction() {
+							 alert("Thank You For Submitting.");
+						}
+					</script>
+					
+					<form onReset="resetOrder()">
+						<label for =" backgroundColour"> Background colour </label>
+						<select name ="backgroundColour" id="backgroundColour" onchange="changeBackgroundColor(this)">
+							<option value ="pleaseSelect"> Please Select </option>
+							<option value = "yellow"> better </option>				
+							<option value= "rgb(37, 68, 65)"> default </option>
+							<option value = "blue"> extra </option>
+							<option value = "green"> better </option>
+						</select>
+						
+						<label for ="textColour"> Text Colour </label>
+						
+						<select name ="textColour" id="textColour" onChange="changeTextColor(this)">
+							<option value ="pleaseSelect"> Please Select </option> 
+							<option value = "yellow"> better </option>				
+							<option value= "red"> default </option>
+							<option value = "blue"> extra </option>
+							<option value = "green"> better </option>
+						</select>	
+						
+						
+
+						<input type ="submit" value ="Reset" onClick="resetColours()">
+						
+						
+						
+					</form>
+				</div>
+			</div>
+			
+			<!-- Footer Section -->
+			<div class="item11" id="footer">
+				<p class="team">4COSC011W: Web Design & Development - Group Project 
+				<br>
+				Page created by <a href="about/cv_rippandeep.html" style="color: rgb(188, 65, 43)">Rippandeep Sehdev</a>
+				</p>
+			</div>
+			
+
+		</div>
+		
+	</body>
+	<script>
+    function passImage(imgName) {
+        var selectedImage = document.getElementById('enlargedImage');
+        selectedImage.src = imgName;
+    }
+    
+    
+    // Text for different images is under here which based on the click, make sure the stephens text is the same as default text.
+    function stephensText() {
+        var heading1 = document.getElementById("header").innerHTML;
+        heading1 = "Stephen Curry";
+		document.getElementById("header").innerHTML = heading1;
+        var bodyText = document.getElementById("description").innerHTML;
+		bodyText = "Wardell Stephen Curry II is an American professional basketball player for the Golden State Warriors in the NBA. He is a six-time NBA All-Star, he has been named the NBA Most Valuable Player (MVP) twice and won three NBA championships with the Warriors. Many players and analysts have called him the greatest shooter in NBA history. He is credited with revolutionizing the game of basketball by inspiring teams to regularly utilize the three-point shot as part of their winning strategy.";
+        document.getElementById("description").innerHTML = bodyText;
+    }
+    
+    function LeBronText(){
+        var heading1 = document.getElementById("header").innerHTML;
+        heading1 = "LeBron James";
+        document.getElementById("header").innerHTML = heading1;
+        var bodyText = document.getElementById("description").innerHTML;
+        bodyText = "LeBron Raymone James Sr.  is a american professional basketball player for the Los Angeles Lakers in the NBA. He is often considered the best basketball player in the world and regarded by some as the greatest player of all time. His accomplishments include four NBA Most Valuable Player Awards, three NBA Finals MVP Awards, and two Olympic gold medals. LeBron James has appeared in fifteen NBA All-Star Games and been named NBA All-Star MVP three times. He won the 2008 NBA scoring title and is the all-time NBA playoffs scoring leader. He has been voted onto the All-NBA First Team twelve times and the All-Defensive First Team five times.";
+        document.getElementById("description").innerHTML = bodyText;
+    }
+    
+    function KobeText(){
+        var heading1 = document.getElementById("header").innerHTML;
+        heading1 = "Kobe Bryant";
+        document.getElementById("header").innerHTML = heading1;
+        var bodyText = document.getElementById("description").innerHTML;
+        bodyText = "Kobe Bean Bryant is an American former professional basketball player. He played his entire 20-year career with the Los Angeles Lakers in the NBA. He entered the NBA directly from high school and won five NBA championships with the Lakers. Kobe Bryant is an 18-time All-Star, 15-time member of the All-NBA Team, and 12-time member of the All-Defensive team. He led the NBA in scoring during two seasons and ranks third on the league's all-time regular season scoring and fourth on the all-time postseason scoring list. He is widely regarded as one of the greatest basketball players of all time. Bryant is the first guard in NBA history to play at least 20 seasons.";
+        document.getElementById("description").innerHTML = bodyText;
+    
+    }
+    function JamesText(){
+        var heading1 = document.getElementById("header").innerHTML;
+        heading1 = "James Harden";
+        document.getElementById("header").innerHTML = heading1;
+        var bodyText = document.getElementById("description").innerHTML;
+        bodyText = "James Edward Harden Jr. is an American professional basketball player for the Houston Rockets in the NBA. He played college basketball for Arizona State, where he was named a consensus All-American and Pac-10 Player of the Year in 2009. Harden was selected with the third overall pick in the 2009 NBA draft by the Oklahoma City Thunder. In 2012, he was named NBA Sixth Man of the Year with the Thunder and helped the team reach the NBA Finals. ";
+        document.getElementById("description").innerHTML = bodyText;
+    }
+    function DeMarText(){
+        var heading1 = document.getElementById("header").innerHTML;
+        heading1 = "DeMar DeRozan";
+        document.getElementById("header").innerHTML = heading1;
+        var bodyText = document.getElementById("description").innerHTML;
+        bodyText = "DeMar Darnell DeRozan is an American professional basketball player for the San Antonio Spurs in the NBA. He played college basketball for the USC Trojans and was selected ninth overall by the Toronto Raptors in the 2009 NBA draft. He is a four-time NBA All-Star and a two-time All-NBA Team member. He spent nine seasons with the Raptors, including five playoff runs, before being traded to the Spurs in the summer of 2018. DeRozan has played for the United States national team in the 2014 World Cup and the 2016 Summer Olympics. ";
+        document.getElementById("description").innerHTML = bodyText;
+    }
+	 
+  	function changeBackgroundColor(el) {
+  		document.body.style.backgroundColor = el.value;
+	}
+	
+	function changeTextColor(el) {
+  		document.body.style.color = el.value;
+	}
+	
+	function resetColours() {
+		var bgColor = document.getElementsByTagName("body").innerHTML;
+		bgColor = document.body.style.backgroundColor = rgb(37, 68, 65);
+		
+		var textColor = document.getElementsByTagName("body").innerHTML;
+		textColor = document.body.style.color = rgb(188, 65, 43);
+	}
+	</script>
+    
+    <script>
+	function openMenu(e){
+		document.getElementById('chris-cvMenu').style.display = "block";
+		document.getElementById('openCVMenu').style.display = "none";
+
+	}
+
+	function closeMenu(e){
+		document.getElementById('chris-cvMenu').style.display = "none";
+		document.getElementById('openCVMenu').style.display = "block";
+	}
+	</script>
+    
+</html>

@@ -1,0 +1,289 @@
+<!-- Type of Web Document -->
+<!DOCTYPE html>
+<html>
+
+	<!-- Page Information, Unicode Settings, and External Styles/Scripts -->
+	<head>
+		<title>BasketMania | Home</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- External Styles -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	</head>
+
+	<!-- Visible Content to User -->
+	<body>
+
+		<!-- CSS Grid System: Page Container -->
+		<div class="grid-container">
+
+			<!-- PAGE (TOP) NAVIGATION -->
+			<div class="item1">
+				<nav>
+					<img src="img/logo-small.png" height="100px" width="200px">
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>	
+						<li><a href="gallery.html">GALLERY</a></li>	
+						<li><a href="quiz.html">QUIZ</a></li>	
+						<li><a href="store.html">STORE</a></li>	
+						<li><a href="contact.html">CONTACT</a></li>	
+					</ul>
+				</nav>	
+			</div>
+
+			<!-- SIDE NAVIGATION - HOME (PAGE ANCHORS & BACK TO TOP-->
+			<button class="fa fa-bars" onclick="openMenu()" id="openCVMenu" alt="open/close CV Menu" style="width: 50px; height: 50px; background-color: rgb(255, 66, 67); border: none; outline: none;"></button>
+			<nav class="chris-cv-navigation" id="chris-cvMenu">
+				<ul class="chris-nav-list">
+					<a id="closeCVMenu" class="fa fa-times" onclick="closeMenu()" style="float: right;"></a>
+					<li><a href="#top">Back to top <i class="fa fa-chevron-up"></i></a></li>
+					<li><a href="#home">Main Image</a></li>
+					<li><a href="#home-about-info">Home About</a></li>
+					<li><a href="#leaderboard-table">Leaderboard</a></li>
+					<li><a href="#team">Team</a></li>
+					<li><a href="#comments">Comments</a></li>
+					<li><a href="#footer">Footer</a></li>
+				</ul>
+			</nav>
+
+			<!-- Page Main Image -->
+			<div class="item2" id="home">
+				<div class="hero-text">
+					<h1>WARNING</h1>
+					<p class="hero">HARDCORE NBA FANS ONLY!</p>
+				</div>
+			</div>
+
+			<!-- Basketball About Section -->
+			<div class="item3" id="home-about-info">
+				<p style="margin-bottom: 50px;">
+				Basket Mania is a hub for NBA Basketball fans. 
+				<br>
+				We provide the latest information regarding this highly popular sport, as well as an interactive quiz for you to test your knowledge, a store to purchase merchandise of your favourite players, and a gallery showasing some of the worlds biggest names in NBA League history. Find more information out about the creators of this site or dig deeper into the history of NBA. 
+				</p>
+				<p style="margin-bottom: 30px;">
+				<span style="font-weight: bold;">NBA Facts:</span> 
+				<br>
+				<i class="fa fa-star" style="margin-right: 10px;"></i>The NBA is one of the major league sports played in the United States of America and Canada
+				<br>
+				<i class="fa fa-star" style="margin-right: 10px;"></i>NBA Players are the highest paid professional athletes in the world by average annual salary
+				<br>
+				<i class="fa fa-star" style="margin-right: 10px;"></i>30 Teams in 2 Divisions
+				<br>
+				<i class="fa fa-star" style="margin-right: 10px;"></i>Canada only has 1 Team in the NBA League
+				
+				</p>
+
+				<button id="home-about" onclick="window.location.href='about.html'">Read More</button>
+			</div>
+
+			<!-- Basketball Match Information -->
+			<div class="item4" id="leaderboard-table">
+				<span id="leaderboard-title">LEADERBOARDS</span>
+				<hr>
+				<span style="font-weight: bold; padding-left: 30px;">EASTERN CONFERENCE </span>
+				<table style="margin-left: 60px;">
+					<tr>
+						<th id="leaderboard-team">Team </th>
+						<th>Position</th>
+						<th id="leaderboard-l10">L-10</th>
+					</tr>
+					<tr>
+						<td id="leaderboard-team"><img src="img/leaderboards/bucks.png" style="height: 15px; width: 15px;">Bucks</td>
+							<td>1</td>
+							<td id="leaderboard-l10">9-1</td>
+					</tr>
+					<tr>
+						<td id="leaderboard-team"><img src="img/leaderboards/raptors.png" style="height: 15px; width: 15px;">Raptors</td>
+						<td>2</td>
+						<td id="leaderboard-l10">8-2</td>
+					</tr>
+					<tr>
+						<td id="leaderboard-team"><img src="img/leaderboards/pacers.png" style="height: 15px; width: 15px;">Pacers</td>
+						<td>3</td>
+						<td id="leaderboard-l10">8-2</td>
+					</tr>
+				</table>
+				<hr>
+				<span style="font-weight: bold; padding-left: 30px;">WESTERN CONFERENCE </span>
+				<table style="margin-left: 60px;">
+					<tr>
+						<th id="leaderboard-team">Team</th>
+						<th>Position</th>
+						<th id="leaderboard-l10">L-10</th>
+					</tr>
+					<tr>
+						<td id="leaderboard-team"><img src="img/leaderboards/warriors.png" style="height: 15px; width: 15px;">Warriors</td>
+						<td>1</td>
+						<td id="leaderboard-l10">9-1</td>
+					</tr>
+					<tr>
+						<td id="leaderboard-team"><img src="img/leaderboards/nuggets.png" style="height: 15px; width: 15px;">Nuggets</td>
+						<td>2</td>
+						<td id="leaderboard-l10">8-2</td>
+					</tr>
+					<tr>
+						<td id="leaderboard-team"><img src="img/leaderboards/thunders.png" style="height: 15px; width: 15px;">Thunder</td>
+						<td>3</td>
+						<td id="leaderboard-l10">8-2</td>
+					</tr>
+				</table>											
+			</div>
+
+			<!-- Student Group Tiles Title -->
+			<div class="item5" id="team">
+				<p class="team">Meet the Team</p>
+			</div>
+			<!-- Student 1 -->
+			<div class="item6">
+				<div class="student">
+					<img src="img/sadiyah.jpg" alt="Sadiyah Yusuf Saeed" style="width:300px; height: 300px;">
+					<h1>Sadiyah Yusuf Saeed</h1>
+					<p class="title">BSc (Hons) Computer Science</p>
+					<p class="title">University of Westminster</p>
+					<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<p><button onclick="window.location.href='about/cv_sadiyah.html'">View CV</button></p>
+				</div>
+			</div>
+			<!-- Student 2 -->
+			<div class="item7">
+				<div class="student">
+					<img src="img/chris.jpg" alt="Christopher Rees" style="width:300px; height: 300px;">
+					<h1>Christopher Rees</h1>
+					<p class="title">BEng (Hons) Software Engineering</p>
+					<p class="title">University of Westminster</p>
+					<a href="https://www.linkedin.com/in/chrisrees93/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<p><button onclick="window.location.href='about/cv_chris.html'">View CV</button></p>
+				</div>			
+			</div>
+			<!-- Student 3 -->
+			<div class="item8">
+				<div class="student">
+					<img src="img/callum.jpg" alt="Callum Bass" style="width:300px; height: 300px;">
+					<h1>Callum Bass</h1>
+					<p class="title">BEng (Hons) Software Engineering</p>
+					<p class="title">University of Westminster</p>
+					<a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<p><button onclick="window.location.href='about/cv_callum.html'">View CV</button></p>
+				</div>			
+			</div>
+			<!-- Student 4 -->
+			<div class="item9">
+				<div class="student">
+					<img src="img/rippandeep.jpg" alt="Rippandeep Sehdev" style="width:300px; height: 300px;">
+					<h1>Rippandeep Sehdev</h1>
+					<p class="title">BSc (Hons) Computer Science</p>
+					<p class="title">University of Westminster</p>
+					<a href="https://www.linkedin.com/in/rippandeep-singh-sehdev-27247b17b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+					<p><button onclick="window.location.href='about/cv_rippandeep.html'">View CV</button></p>
+				</div>			
+			</div>
+
+			<!-- Comments Section -->
+			<div class="item10" id="comments">
+				<h1 style="text-align: center;">Leave a Comment</h1>
+					<form name="comments-section" onsubmit="return validationCheck()">
+						<div class="row">
+							<div class="col-max">
+								<input type="text" id="name" name="name" placeholder="Your name..">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-max">
+								<label for="rating"><h2 style="text-align: center; padding: 0; margin: 0;">Rate our Website</h2></label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-max">
+								<div class="rating">
+	  								<input type="range" min="0" max="100" value="0" class="rating-slider" id="ratingRange">
+	  								<h3 style="text-align: center; padding: 3; margin: 0;">Selected Rating: <span id="current-rating" style="font-weight: bold;"></span></h3>
+	  								<script>
+	  									var slideVal = document.getElementById("ratingRange");
+										var y = document.getElementById("current-rating");
+										y.innerHTML = slideVal.value;
+
+										slideVal.oninput = function() {
+	    								y.innerHTML = this.value;
+										}
+	  								</script>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-max">
+								<textarea id="user-comment" name="user-comment" placeholder="Enter comment.." style="height:200px"></textarea>
+							</div>
+						</div>
+						<div class="row">
+							<button type="submit" id="comments-submit">Submit</button>
+							<script>
+
+							</script>
+						</div>
+					</form>
+				</div>
+
+			<!-- Footer Section -->
+			<div class="item11" id="footer">
+				<p class="team">4COSC011W: Web Design & Development - Group Project 
+				<br>
+				Page created with <i class="fa fa-heart"></i> by <a href="about/cv_chris.html" style="color: rgb(188, 65, 43)">Christopher Rees</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	
+	<!-- Form Validation for Comments Section -->
+	<script>
+	function formValidation() {
+		var name = document.forms["comments-section"]["name"].value;
+		var rating = document.forms["comments-section"]["ratingRange"].value;
+		if (name == "" || rating == 0) {
+			alert("Please enter your name & a valid rating!");
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	function displayComment() {
+		var name = document.getElementById("name").value;
+		var rating = document.getElementById("ratingRange").value;
+		var comment = document.getElementById("user-comment").value;
+
+		alert("Your Review: \n\nYour name is: " + name + "\n" + "You rated us: " + rating + " out of 100 \nYour Comment: " + comment + "\n\n Thanks for leaving us a comment!")
+	}
+
+	function validationCheck() {
+		if (formValidation() == true) {
+			displayComment();
+			return true;
+		}
+		else {
+			formValidation();
+			return false;
+		}
+
+	}
+	</script>
+
+	<!-- Side Navigation Menu -->
+	<script>
+	function openMenu(e){
+		document.getElementById('chris-cvMenu').style.display = "block";
+		document.getElementById('openCVMenu').style.display = "none";
+	}
+
+	function closeMenu(e){
+		document.getElementById('chris-cvMenu').style.display = "none";
+		document.getElementById('openCVMenu').style.display = "block";
+	}
+	</script>
+</html>

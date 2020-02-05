@@ -1,0 +1,305 @@
+<!-- Type of Web Document -->
+<!DOCTYPE html>
+<html>
+
+	<!-- Page Information, Unicode Settings, and External Styles/Scripts -->
+	<head>
+		<title>BasketMania | About</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		
+		<!-- External Styles -->
+		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<!-- Visible Content to User -->
+	<body>
+
+		<!-- CSS Grid System: Page Container -->
+		<div class="grid-container">
+
+			<!-- Page Navigation -->
+			<div class="item1">
+				<nav>
+					<img src="../img/logo-small.png" height="100px" width="200px">
+					<ul>
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="../about.html">ABOUT</a></li>	
+						<li><a href="../gallery.html">GALLERY</a></li>						
+						<li><a href="../quiz.html">QUIZ</a></li>	
+						<li><a href="../store.html">STORE</a></li>		
+						<li><a href="../contact.html">CONTACT</a></li>	
+					</ul>
+				</nav>	
+			</div>
+
+			<!-- About Page Sub-Navigation -->
+			<div class="item2">
+					<ul class="nav-bar-sub">
+						<li class="sub-nav-item1"><a href="../sitemap.html">SITE MAP</a></li>
+						<li><a href="cv_sadiyah.html">SADIYAH</a></li>	
+						<li><a href="#">CHRISTOPHER</a></li>	
+						<li><a href="cv_callum.html">CALLUM</a></li>											
+						<li><a href="cv_rippandeep.html">RIPPANDEEP</a></li>	
+					</ul>
+				</nav>	
+			</div>
+
+			<!-- CV NAVIGATION - HIDDEN MENU-->
+			<button class="fa fa-bars" onclick="openCVMenu()" id="openCVMenu" alt="open/close CV Menu" style="width: 50px; height: 50px; background-color: rgb(255, 66, 67); border: none; outline: none;"></button>
+			<nav class="chris-cv-navigation" id="chris-cvMenu">
+				<ul class="chris-nav-list">
+					<a id="closeCVMenu" class="fa fa-times" onclick="closeCVMenu()" style="float: right;"></a>
+					<li><a href="#top">Back to top <i class="fa fa-chevron-up"></i></a></li>
+					<li><a href="#cv-info">Contact Details</a></li>
+					<li><a href="#myphoto">My Photo</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#hobbies">Hobbies</a></li>
+					<li><a href="#references">References</a></li>
+					<li><a href="#footer">Footer</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main Section Start -->
+			<div class="item12"> 
+				<div class="cv-title" id="cv-info">
+					<p style="margin-top: -20px;">
+						<h1 style="font-size: 65px; margin-bottom: -20px; margin-left: 15px;">Christopher Rees</h1> 
+						<h3 style="font-size: 40px; margin-bottom: -20px; margin-top: 15px; margin-left: 15px;">London, E2</h3>
+						<h3 style="font-size: 25px; margin-bottom: -20px; margin-top: 15px; margin-left: 15px; padding-top: 10px; padding-bottom: 50px;">Telephone: +44 (0) 7523812360 | Email: <a href="mailto:chris@reeswebdev.com">chris@reeswebdev.com </a></h3>
+						<hr>
+						<br>
+						<a href="https://linkedin.com/in/chrisrees93" target="_blank" style="padding-right: 15px; margin-left: 15px;"><i class="fa fa-linkedin" style="padding-right: 5px;"></i>LinkedIn</a>
+				</div>
+			</div>
+
+			<div class="item13">
+				<div class="cv-photo" id="chrisPhoto"></div>	
+			</div>
+
+			<div class="item14">
+				<div class="cv-section-container" id="profile">
+					<p>
+						<span style="font-size: 35px; font-weight: bold; margin: 15px;">Profile</span>
+						<hr>
+						<p style="font-size: 20px; margin: 15px;">
+						I am a BEng (Hons) Software Engineering Student looking to further my current skills that will allow me to excel in the near and distant future. I am looking for new opportunities that will demonstrate my current expertise but also challenge myself to achieve my short & long-term Career Goals by learning new Skills & Knowledge in a professional environment. 
+						</p>
+					</p>
+				</div>
+			</div>
+
+			<div class="item15">
+				<div class="cv-section-container" id="skills">
+					<p>
+						<span style="font-size: 35px; font-weight: bold; margin: 15px;">Skills</span>
+						<hr>
+						<table style="width: 100%; margin-top: 20px; text-align: center; margin-left: 50px;">
+							<tr>
+								<th>HTML/CSS</th>
+								<th>Visual problem solving</th>
+							</tr>
+							<tr>
+								<th>JavaScript</th>
+								<th>Critical thinking</th>
+							</tr>
+							<tr>
+								<th>Node JS</th>
+								<th>Creativity</th>
+							</tr>
+							<tr>
+								<th>Python</th>
+								<th>Sales (B2B & B2C)</th>
+							</tr>
+							<tr>
+								<th>Java</th>
+								<th>Communication</th>
+							</tr>							
+						</table>
+					</p>	
+				</div>
+			</div>
+
+			<!-- EDUCATION SECTION START -->
+			<div class="item17">
+				<div class="cv-section-container" id="education">
+					<p>
+						<span style="font-size: 35px; font-weight: bold; margin: 15px;">Education</span>
+						<hr>
+						<span id="cv-education-title">BEng (Hons) Software Engineering</span><span id="cv-education-sub-title"> | University of Westminster</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">SEPTEMBER 2018 to JUNE 2021</span>
+						<br>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Modules:</span><span style="font-size: 16px;">Mathematics, Computer Systems, Web Design and Development, Programming (Python and Java) and MySQL Databases</span>
+						<br>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Extra Curricular Activities:</span><span style="font-size: 16px;">Networking Events, Employability Award, Mentoring Scheme.</span>
+						<br>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Field Trips:</span><span style="font-size: 16px;">Austria (March 2019) - Games Hackathon</span>
+						<br>
+						<br>
+						<span id="cv-education-title">Access to HE: Business</span><span id="cv-education-sub-title"> | Gower College Swansea</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">SEPTEMBER 2015 to MAY 2016</span>
+						<br>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Grade:</span><span style="font-size: 16px;">Merit</span>
+						<br>
+						<br>
+						<span id="cv-education-title">GCSEs</span><span id="cv-education-sub-title"> | St Michaels School</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">SEPTEMBER 2007 to JUNE 2010</span>
+						<br>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">8 GCSEs </span><span style="font-size: 16px;">(A* to D, including Mathematics - A* and Science - C)</span>
+						<br>
+						<br>																								
+					</p>
+				</div>
+			</div>
+			<!-- EDUCATION SECTION END -->
+
+			<!-- EXPERIENCE SECTION START -->
+			<div class="item18">
+				<div class="cv-section-container" id="experience">
+					<p>
+						<span style="font-size: 35px; font-weight: bold; margin: 15px;">Experience</span>
+						<hr>
+						<!-- JOB 1 -->
+						<span id="cv-education-title">Freelance Web Developer</span><span id="cv-education-sub-title"> | Rees WebDev, London</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">JULY 2017 to PRESENT</span>
+						<br>						
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Responsibilities: </span><span style="font-size: 16px;">
+							<ul>
+								<li>Completing Gigs on multiple platforms & external Clients</li>
+								<li>HTML, eCommerce, WP, OpenCart, Concept Art, UX Design, SEO & Digital Marketing</li>
+								<li>Managing and completing different software projects</li>
+								<li>Consulting with external resources to manage other tasks</li>
+							</ul>	
+						</span>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Achievements: </span><span style="font-size: 16px;">
+							<ul>
+								<li>PPC Conversions to over 120% in 3 Months - ChicParfums, Canada</li>
+								<li>Increased Social Media Presence - Cassandra's Delights, Wales</li>
+								<li>Custom EPOS & Integrated Menu ordering System - BatandBall, Stratford</li> 
+								<li>Remote SaaS Installation for Moodle to Business User - Literacy Empowerment, Australia</li>
+							</ul>	
+						</span>
+						<br>						
+						<!-- JOB 2 -->
+						<span id="cv-education-title">Technical Advisor & Trainer</span><span id="cv-education-sub-title"> | British Telecommunications, Cardiff</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">JUNE 2016 to JULY 2017</span>
+						<br>						
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Responsibilities: </span><span style="font-size: 16px;">
+							<ul>
+								<li>Resolving Technical Faults, Billing Queries and Complaints</li>
+								<li>Admin Work (Letters, callbacks, emails)</li>
+								<li>Training new Advisors & Managers in Wales and Ireland</li>
+							</ul>	
+						</span>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Achievements: </span><span style="font-size: 16px;">
+							<ul>
+								<li>Assisted with setting up a new Call Centre in Dublin (Duration: 4 Months)</li>
+								<li>Successfully trained a team of 30 Technical Advisors and Team Manager</li>
+							</ul>	
+						</span>
+						<br>
+						<!-- JOB 3 -->
+						<span id="cv-education-title">Telecoms Account Manager</span><span id="cv-education-sub-title"> | Janacom, Swansea</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">OCTOBER 2014 to SEPTEMBER 2015</span>
+						<br>						
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Responsibilities: </span><span style="font-size: 16px;">
+							<ul>
+								<li>Manage Portfolio of 30 Clients</li>
+								<li>Business to Business Sales</li>
+								<li>Verbal & Written Communication (Emails, Skype, Phone, Face to Face)</li>
+								<li>Attend & Organize meetings at International Events (ITW, GCCM)</li>
+								<li>Admin (Spreadsheets, Contracts, LCR, PL Accounts) </li>
+							</ul>	
+						</span>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Achievements: </span><span style="font-size: 16px;">
+							<ul>
+								<li>$2.5 Million Sales</li> 
+								<li>970 Million Minutes exchanged</li>
+								<li>Cleared Company Debt of £50,000</li>
+								<li>Connected with 35 New Clients</li>
+							</ul>	
+						</span>
+						<br>
+						<!-- JOB 4 -->
+						<span id="cv-education-title">Senior Sales Advisor</span><span id="cv-education-sub-title"> | The Review Bureau, Swansea</span>
+						<br>
+						<span style="font-size: 20px; margin-left: 15px;">NOVEMBER 2012 to AUGUST 2014</span>
+						<br>						
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Responsibilities: </span><span style="font-size: 16px;">
+							<ul>
+								<li>Business to Consumer Sales</li>
+								<li>Reviewing Life Insurance Policies</li>
+								<li>Achieving Sales Targets</li>
+								<li>Managing Time Efficiently</li>
+							</ul>	
+						</span>
+						<span style="font-weight: bold; font-size: 16px; margin-left: 15px;">Achievements: </span><span style="font-size: 16px;">
+							<ul>
+								<li>Exceeded Daily & Weekly Sales Targets</li>
+								<li>Top Sales Advisor (13 Consecutive Months)</li>
+							</ul>	
+						</span>
+					</p>
+				</div>
+			</div>
+			<!-- EXPERIENCE SECTION END -->
+
+			<div class="item19" id="hobbies">
+				<div class="cv-section-container">
+					<p>
+						<span style="font-size: 35px; font-weight: bold; margin: 15px;">Hobbies/Interests</span>
+						<hr>
+						<p>
+							<ul style="list-style: none;">
+								<li>Creating Websites & Applications</li>
+								<li>Fine Art (Inspired by Banksy)</li>
+								<li>Travelling (6 US States, Spain, Philippines, Singapore, Ireland, Austria)</li>
+								<li>Snowboarding (Vermont, USA)</li>
+								<li>Attending local events (BigDataLDN 2018, BestYou Expo 2019)</li>
+							</ul>
+						</p>
+					</p>	
+				</div>
+			</div>
+
+			<div class="item20" id="references">
+				<div class="cv-section-container">
+					<p>
+						<span style="font-size: 35px; font-weight: bold; margin: 15px;">References available upon request</span>
+					</p>
+				</div>
+			</div>
+			<!-- Main Section End -->
+
+			<!-- Footer Section -->
+			<div class="item11" id="footer">
+				<p class="team">4COSC011W: Web Design & Development - Group Project 
+				<br>
+				Page created with <i class="fa fa-heart"></i> by <a href="about/cv_chris.html" style="color: rgb(188, 65, 43)">Christopher Rees</a>
+				</p>
+			</div>
+		</div>
+	</body>
+	<script>
+		function openCVMenu(e){
+			document.getElementById('chris-cvMenu').style.display = "block";
+			document.getElementById('openCVMenu').style.display = "none";
+
+		}
+
+		function closeCVMenu(e){
+			document.getElementById('chris-cvMenu').style.display = "none";
+			document.getElementById('openCVMenu').style.display = "block";
+		}
+	</script>
+</html>
